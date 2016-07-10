@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RouteOps - Sophisticated Route Planning made easy</title>
+---
+layout: default
+---
 
-    <style type="text/css">
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
+<div class="home">
 
-        .logo {
-            display: block;
-            height: 94px;
-            margin-top: -47px;
-            top: 50%;
-            position: absolute;
-            margin-left: -202px;
-            left: 50%;
-        }
-    </style>
-</head>
-<body>
+  <h1 class="page-heading">Posts</h1>
 
-    <img class="logo" src="img/web-logo.png" alt="RouteOps" />
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-</body>
-</html>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
