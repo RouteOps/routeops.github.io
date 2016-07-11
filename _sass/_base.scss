@@ -1,6 +1,11 @@
-//$body-bg: #bada55;
-$gray-base: #454545;
-$brand-primary: #34495E;
+$clr_white: rgba(255, 255, 255, 1);
+$clr_vivid_cerulean: rgba(0, 167, 225, 1);
+$clr_celadon_blue: rgba(0, 126, 167, 1);
+$clr_prussian_blue: rgba(0, 52, 89, 1);
+$clr_rich_black: rgba(0, 23, 31, 1);
+
+$gray-base: $clr_rich_black;
+$brand-primary: $clr_prussian_blue;
 $font-family-sans-serif: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 $headings-font-weight: 100;
 
